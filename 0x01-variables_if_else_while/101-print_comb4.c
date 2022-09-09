@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 /**
- *
  * main - loop through variables a,b,c printing digits
  *
- *
- * * Return: print to stdout all possible different combinations of three digits
- * **/
+ * Return: print to stdout all possible different combinations of three digits
+ */
 int main(void)
 {
 	int a = '0';
@@ -41,5 +39,3 @@ int main(void)
 	}
 	return (0);
 }
-
-
