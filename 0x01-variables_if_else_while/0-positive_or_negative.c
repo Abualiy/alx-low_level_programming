@@ -21,7 +21,7 @@ int main(void)
 	{
 		printf("%d is %s\n", n, "positive");
 	}
-	else 
+	else
 	{
 		printf("%d is %s\n", n, "zero");
 	}
