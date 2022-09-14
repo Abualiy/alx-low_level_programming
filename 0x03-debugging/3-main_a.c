@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- * main -tasks a date amd prints how days are left in the year, taking leap years into account
+ * main -tasks a date amd prints how days are left in the year, taking
+ * leap years into account
  * Return: 0
  */
+
 int main(void)
 {
 	int month;
