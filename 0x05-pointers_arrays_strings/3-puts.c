@@ -5,7 +5,7 @@
  * @strL char
  * Return: string
  */
-void _pust(char *str)
+void _puts(char *str)
 {
 	int i;
 
