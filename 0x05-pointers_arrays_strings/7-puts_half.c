@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
- * puts_helf - prints half of a string
+ * puts_half - prints half of a string
  * @str: a pointer to string
  * Return: string
  */
