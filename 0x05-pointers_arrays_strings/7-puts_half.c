@@ -2,7 +2,7 @@
 
 /**
  * _strlen - get the length of a string.
- * @s: a pointer to achr 
+ * @s: a pointer to achr
  * Return: length of a string
  */
 
