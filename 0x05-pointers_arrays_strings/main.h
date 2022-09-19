@@ -25,4 +25,5 @@ void print_most_numbers(void);
 int mul(int a, int b);
 void print_number(int n);
 void reset_to_98(int *n);
+void swap_int(int *a, int *b);
 #endif
