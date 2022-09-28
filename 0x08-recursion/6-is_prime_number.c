@@ -1,27 +1,57 @@
 #include "main.h"
+
 /**
-* is_prime_number - returns a prime number
-* @n: takes in an integer
-* Return: 1 if n a prime number or 0 if not prime
-**/
-int is_prime_number(int n)
+ *evaluate_num - recursion loop
+ *@num: num
+ *@iterator: number to iterate
+ *Return: return 1 or 0
+ */
+
+int evaluate_num(int num, int iterator)
 {
-if (n == 1 || n < 0)
+
+if (iterator == num - 1)
+{
+return (1);
+}
+
+else if (num % iterator == 0)
+{
 return (0);
-return (pnumber(2, n));
+}
+
+if (num % iterator != 0)
+{
+return (evaluate_num(num, iterator + 1));
+}
+
+return (0);
 
 }
+
 /**
-* pnumber - help me to find the prime number
-* @x: integer
-* @n: integer
-* Return: 1 if prime or 0 if not
-**/
-int pnumber(int x, int n)
+ *is_prime_number - evaluate prime or not
+ *@num: number
+ *Return: return 1 prime - return 0 otherwise
+ */
+
+int is_prime_number(int num)
 {
-	if (n == x)
-		return (1);
-	else if (n % x == 0)
-		return (0);
-	return (pnumber(x + 1, n));
+
+int iterator;
+
+iterator = 2;
+
+/* only greater than 2*/
+if (num < 2)
+{
+return (0);
+}
+
+if (num == 2)
+{
+return (1);
+}
+
+return (evaluate_num(num, iterator));
 }
