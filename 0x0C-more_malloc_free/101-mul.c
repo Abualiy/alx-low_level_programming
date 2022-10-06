@@ -77,7 +77,7 @@ int getLengthOfNum(char *str)
 }
 
 /**
-* populateResult - multiplies two numbers stored as string and stores the result
+* populateResult - multiplies two numbers stored as string and stores result
 * @dest: pointer to where @num1 * @num2 should be stored
 * @n1: positive number stored as string in an array
 * @n2: positive number stored as string in an array
