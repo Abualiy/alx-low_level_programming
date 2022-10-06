@@ -8,11 +8,8 @@ void print_result(char *src, int length);
 
 /**
 * main - entry point, multiplies two numbers
-*
 * @argc: integer, length of @argv
-*
 * @argv: one-dimensional array of strings, arguments of this program
-*
 * Return: 0, success
 */
 
@@ -59,11 +56,8 @@ int main(int argc, char *argv[])
 
 /**
 * getLengthOfNum - length of numbers in a string
-*
 * @str: pointer to string of numbers
-*
-* Return: integer (SUCCESS) or
-* NULL, if string includes char
+* Return: integer (SUCCESS) or NULL, if string includes char
 */
 
 int getLengthOfNum(char *str)
@@ -83,17 +77,11 @@ int getLengthOfNum(char *str)
 }
 
 /**
-* populateResult - multiplies two numbers stored as string
-* and stores result in @dest
-*
+* populateResult - multiplies two numbers stored as string and stores result in @dest
 * @dest: pointer to where @num1 * @num2 should be stored
-*
 * @n1: positive number stored as string in an array
-*
 * @n2: positive number stored as string in an array
-*
 * @n1_len: length of @n1
-*
 * @n2_len: length of @n2
 */
 
@@ -163,9 +151,7 @@ void populateResult(char *dest, char *n1, int n1_len, char *n2, int n2_len)
 
 /**
 * print_result - prints numbers stored as string in a memory location
-*
 * @src: pointer to memory that stores numbers as strings
-*
 * @length: length of @src
 */
 
