@@ -11,7 +11,7 @@ void nums_add(char *final_prod, char *next_prod, int next_len);
 /**
  *_strlen - length of string
  *
- *@s:string
+ *@s:hold string
  *
  *Return:string length
  *
