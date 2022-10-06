@@ -216,10 +216,10 @@ int main(int argc, char *argv[])
 	{
 		if (final_prod[i] != 'x')
 		{
-			putchar(final_prod[i]);
+			_putchar(final_prod[i]);
 		}
 	}
-	putchar('\n');
+	_putchar('\n');
 	free(next_prod);
 	free(final_prod);
 	return (0);
