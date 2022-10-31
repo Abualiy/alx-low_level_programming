@@ -1,29 +1,14 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef __MAIN_H__
+#define __MAIN_H__
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <string.h>
-#include <elf.h>
+#include <stdlib.h>
 
-int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
-void error_98(int f0, char *buffer, char *argv);
-void error_99(int f0, char *buffer, char *argv);
-void error_100(int f0, char *buffer);
-void elf_validation(unsigned char *e_ident);
-void print_magic(unsigned char *e_ident);
-void print_class(unsigned char *e_ident);
-void print_data(unsigned char *e_ident);
-void print_version(unsigned char *e_ident);
-void print_osabi(unsigned char *e_ident);
-void print_type(unsigned int e_type, unsigned char *e_ident);
-unsigned int lit_to_big_endian(unsigned int x);
-void print_entry(unsigned int e_type, unsigned char *e_ident);
 
 #endif
